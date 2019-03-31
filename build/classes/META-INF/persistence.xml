@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="BIT794_TMA3_4210211PU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>entity.DB.Borrower</class>
+    <class>entity.DB.Item</class>
+    <class>entity.DB.Loan</class>
+    <class>entity.DB.Reservation</class>
+    <class>entity.DB.Librarian</class>
+    <class>entity.DB.Reserve</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://127.0.0.1:3306/library_management_system?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="605240EKpp15"/>
+    </properties>
+  </persistence-unit>
+</persistence>
